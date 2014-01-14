@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="View Testimonial">
+		<message>Adds a simple layout to view all the testimonials</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field name="count" type="text"
+				description="Pagination Limit"
+				default="5"
+				extension="com_testimonial_fader"
+				label="Pagination Limit"
+				required="true"
+			/>
+			<field name="show_menu"
+				 type="radio"
+				 default="0"
+				  class="btn-group"
+				 label="Show Menu Name"
+				 description="Show Menu Name">
+				 <option value="0">JHIDE</option>
+				 <option value="1">JSHOW</option>
+			</field>
+			<field name="show_pag"
+				 type="radio"
+				 default="0"
+				  class="btn-group"
+				 label="Show Pagination  Name"
+				 description="Show Pagination Name">
+				 <option value="0">JHIDE</option>
+				 <option value="1">JSHOW</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

@@ -1,0 +1,24 @@
+TO DO
+---------------------------------------------------
++ Create contact form in RSForm and install plugin (then uninstall breezing forms)
+
+
+
+COMPLETED
+---------------------------------------------------
++ Add class to contact form "bfQuickMode contact_form"
++ change Message to Textarea on contact form
++ Remove sample data from image library
++ Move Smarticons somewhere else
++ Add
+                <?php if($this->countModules('slideshow') >= '2' ) : ?>
+                	<a href="#" class="prev">&#8249;</a>
+                        <a href="#" class="next">&#8250;</a>
+		<?php endif; ?>
++ Set up basic contact form (with validation and baloon errors)
+
++ Install Akeeba Backup Pro
++ In JCE > Editor Global Configuration change to No Container and Paragraph on enter
++ Add front end login and plugin for quick logout - configure Guest setting
++ Create Sitemap
++ Add button style to template.css (not sure if I did it or not)

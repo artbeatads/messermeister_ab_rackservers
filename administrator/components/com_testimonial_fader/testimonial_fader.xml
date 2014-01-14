@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+	<name>COM_TESTIMONIAL_FADER</name>
+	<author>Infyways Solutions</author>
+	<creationDate>December 2012</creationDate>
+	<copyright>Copyright (C) 2011 - 2012 Infyways Solutions. All rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>info@infyways.com</authorEmail>
+	<authorUrl>http://www.infyways.com</authorUrl>
+	<version>3.2</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Thank you for installing Testimonial Fader</description>
+
+	<install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+	<!-- Site Main File Copy Section -->
+	<!-- Note the folder attribute: This attribute describes the folder
+		to copy FROM in the package to install therefore files copied
+		in this section are copied from /site/ in the package -->
+	<files folder="site">
+        <filename>index.html</filename>
+        <filename>testimonial_fader.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+		<folder>language</folder>
+        <folder>helpers</folder>
+		<folder>css</folder>
+		<folder>font</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+		</files>
+        <languages folder="site">
+        <language tag="en-GB">language/en-GB.com_testimonial_fader.ini
+        </language>
+    </languages>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="components/com_testimonial_fader/assets/images/edit.png">COM_TESTIMONIAL_FADER_MENU</menu>
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>testimonial_fader.php</filename>
+             <folder>assets</folder>
+			<folder>helpers</folder>
+         	<folder>language</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <folder>images</folder>
+        </files>
+		 <languages folder="admin">
+            <language tag="en-GB">language/en-GB.com_testimonial_fader.ini
+            </language>
+            <language tag="en-GB">language/en-GB.com_testimonial_fader.sys.ini
+            </language>
+        </languages>
+	</administration>
+
+</extension>
+

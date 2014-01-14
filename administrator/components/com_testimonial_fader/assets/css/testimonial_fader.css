@@ -1,0 +1,22 @@
+.icon-48-testimonial{
+   background: url('../images/testimonial_large.png') 0 0 no-repeat;
+}
+.icon-48-testimonial h2{
+color:#222!important;
+}
+#testimonial_edit{
+font-size:12px;
+}
+#testimonial_edit input,#testimonial_edit select{
+	font-size: 13px;
+	height: 25px;
+padding:2px;
+	width: 300px;
+}
+#testimonial_edit textarea{
+	width:300px;
+	height:200px;
+	font-size:13px;
+	font-family:arial;
+	padding:2px;
+}

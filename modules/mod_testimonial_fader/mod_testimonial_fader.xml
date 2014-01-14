@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.7.0" position="status" method="upgrade">
+	<name>Testimonial Fader</name>
+	<author>Infyways Solutions</author>
+	<creationDate>August 2012</creationDate>
+	<copyright>Copyright (C) 2011 - 2012 Infyways Solutions. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@infyways.com</authorEmail>
+	<authorUrl>www.infyways.com</authorUrl>
+	<version>3.1</version>
+	<description><![CDATA[
+	<h4>Thank you for installing Testimonial Fader.</h4><hr/>For any support and queries <a href="http://support.infyways.com" target="_blank">Click Here</a></br>For other Joomla! extensions please visit :<a href="http://www.extensions.infyways.com" target="_blank" >http://www.extensions.infyways.com</a></br>Please rate and review our extension at Joomla Extensions  Directory <a href ="http://extensions.joomla.org/extensions/contacts-and-feedback/testimonials-a-suggestions/17767" target="_blank"> Click Here</a>
+	]]></description>
+	<files>
+		<filename module="mod_testimonial_fader">mod_testimonial_fader.php</filename>
+		<filename module="mod_testimonial_fader">index.html</filename>
+		<filename module="mod_testimonial_fader">helper.php</filename>
+		<folder module="mod_testimonial_fader">tmpl</folder>
+		<folder module="mod_testimonial_fader">admin</folder>
+    </files>
+	 <config>
+		<fields name="params">
+			<fieldset name="data0" label="Library Settings" addfieldpath="/modules/mod_testimonial_fader/admin/elements/">
+				<field type="utility" path="modules/mod_testimonial_fader/admin/"/>
+				<field type="asset" path="modules/mod_testimonial_fader/admin/" />
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="" />
+				<field name="load1" type="list" default="1" class="gk_switch" label="Load jQuery Library" description="If you have more than one module using jQuery library, then deactivate this. Or in case, you are not able to get the slideshow, then try disabling it. If you have no idea,what you are doing,then keep it ENABLED.">
+						<option value="1">ENABLED</option>
+						<option value="0">DISABLED</option>
+				</field>
+				<field name="jsfiles" type="list" default="1" label="Include js file" description="You can define js files inside the head or body in case of conflicts.">
+						<option value="1">Head</option>
+						<option value="0">Body</option>
+				</field>
+			</fieldset>
+			<fieldset name="data1" label="General Settings" addfieldpath="/modules/mod_testimonial_fader/admin/elements/">
+				<field name="" type="header" default="&lt;b&gt;Module Settings&lt;/b&gt;" label="&lt;b&gt;Module Settings&lt;/b&gt;" description=""/>
+				<field name="height" type="text" label="Height of Block" default="100px" description="Enter the height of the testimonial block in pixels."/>
+				<field name="width" type="text" label="Width of Block" default="400px" description="Enter the width of the testimonial block in pixels."/>
+				
+				<field name="" type="header" default="&lt;b&gt;Style Settings&lt;/b&gt;" label="&lt;b&gt;Style Settings&lt;/b&gt;" description=""/>
+				<field name="tfont" type="list" label="Testimonial Font" description="Select the font style for the testimonial font.">
+					<option value="user">User Defined</option>
+					<option value="Questrial">Questrial</option>
+					<option value="Numans">Numans</option>
+					<option value="Comfortaa">Comfortaa</option>
+					<option value="Andika">Andika</option>
+					<option value="Podkova">Podkova</option>
+					<option value="Carme">Carme</option>
+					<option value="Varela ">Varela Round</option>
+					<option value="Shanti">Shanti</option>
+					<option value="Muli">Muli</option>
+					<option value="Yellowtail">Yellowtail</option>
+					<option value="Didact Gothic">Didact Gothic</option>
+					<option value="Lato">Lato</option>
+					<option value="Nunito">Nunito</option>
+					<option value="Lobster Two">Lobster Two</option>
+					<option value="Rosario">Rosario</option>
+					<option value="IM Fell French Canon SC">IM Fell French Canon SC</option>
+					<option value="Actor">Actor</option>
+					<option value="Cabin">Cabin</option>
+					<option value="Rochester">Rochester</option>
+					<option value="Calligraffitti">Calligraffitti</option>
+					<option value="Pacifico">Pacifico</option>
+					<option value="Damion">Damion</option>
+					<option value="Varela">Varela</option>
+					<option value="Molengo">Molengo</option>
+					<option value="Ubuntu">Ubuntu</option>
+				</field>
+				<field name="user_defined" type="text" label="User-defined Testimonial Font" description="If 'Testimonial Font' is set to 'User Defined', then enter the font you would like to have." default=""/>
+				<field name="tsize" type="text" label="Testimonial Font Size" default="12" description="Enter the size of the testimonials in pixels."/>
+				<field name="tcolor" type="colorpicker" label="Testimonial Color" default="#666" description="Enter the color of the testimonials in pixels."/>
+				<field name="tweight" type="list" label="Testimonials Font Weight" description="Enter the font weight of the testimonials in pixels.">
+					<option value="normal">Normal</option>
+					<option value="bold">Bold</option>
+				</field>
+				<field name="acolor" type="colorpicker" label="Author Color" default="#666" description="Select the author color."/>
+				<field name="asize" type="text" label="Author Font Size" default="12" description="Enter the font size of author."/>
+				<field name="aweight" type="list" label="Author Font Weight" description="Select the font weight of author.">
+						<option value="normal">Normal</option>
+						<option value="bold">Bold</option>
+				</field>
+				<field name="quote_style" type="list" label="Quote Style" description="Select the quote style of testimonial.">
+					<option value="style1">Style 1</option>
+					<option value="style2">Style 2</option>
+					<option value="style3">Style 3</option>
+					<option value="style4">Style 4</option>
+					<option value="style5">Style 5</option>
+				</field>
+				<field name="quote" type="list" label="Quote Color" description="Select the quote color of testimonial.">
+					<option value="grey">Grey</option>
+					<option value="green">Green</option>
+					<option value="orange">Orange</option>
+					<option value="blue">Blue</option>
+					<option value="black">Black</option>
+					<option value="red">Red</option>
+					<option value="none">None</option>
+				</field>
+				<field name="" type="header" default="&lt;b&gt;Animation Settings&lt;/b&gt;" label="&lt;b&gt;Animation Settings&lt;/b&gt;" description=""/>
+					<field name="speed" type="text" label="Testimonial Speed" default="750"/>
+					<field name="timeout" type="text" label="Time Out" default="2000"/>
+					<field name="animation" type="list" label="Animation Type">
+						<option value="slide">Slide</option>
+						<option value="fade">Fade</option>
+					</field>
+					<field name="show_type" type="list" label="Show Testimonial">
+						<option value="random">Randomly</option>
+						<option value="sequence">Sequentially</option>
+					</field>
+				<field name="" type="header" default="&lt;b&gt;Testimonial Source&lt;/b&gt;" label="&lt;b&gt;Testimonial Source&lt;/b&gt;" description=""/>
+				<field name="source" type="list" default="component" label="Testimonial Source" description="Select the source from which you want to fetch testimonials.">
+							<option value="component">From Testimonial Component</option>
+							<option value="module">From Testimonial Module</option>
+				</field>
+				<field name="testimonials" type="textarea" default="My company is very happy of the job accomplished by your team. You have designed a brand new joomla website for our company. The team was fast, professional and the price was good too. Well done!/No one works faster. No one works better. No one works smarter. Thank you, Infyways Team!." label="Testimonials" description="Please enter testimonials name separated by '/'" rows="10" cols="50" />
+				<field name="authors" type="textarea" default="John Doe/Jacob Robins" label="Author's Name" description="Please enter author name separated by '/'" rows="10" cols="50" />
+			</fieldset>
+			<fieldset name="data3" label="Support" addfieldpath="/modules/mod_testimonial_fader/admin/elements/">
+				<field type="asset" path="modules/mod_testimonial_fader/admin/" />
+				<field type="about" name="about_us" /> 
+			</fieldset>
+		</fields>
+	</config>
+	
+	
+	<params name="basic" label="Library Settings" addpath="/modules/mod_testimonial_fader/admin/elements/">
+		<param type="asset" path="modules/mod_testimonial_fader/admin/"/>
+		<param type="utility" path="modules/mod_testimonial_fader/admin/"/>
+		<param type="spacer" default="&lt;div style=&quot;border-bottom: 1px solid #D75307;color: #333333;font-size: 11px;font-weight: bold;margin: 0;padding: 3px;text-align: justify;text-transform: uppercase;&quot;&gt;Library Settings&lt;/div&gt;" />
+		<param name="load1" type="list" default="1" class="gk_switch" label="Load jQuery Library" description="">
+			<option value="1">ENABLED</option>
+			<option value="0">DISABLED</option>
+		</param>
+		<param name="jsfiles"  type="list" default="1" label="Include js file" description="You can define js files inside the head or body in case of conflicts.">
+							<option value="1">Head</option>
+							<option value="0">Body</option>
+		</param>
+		<param type="spacer" default="&lt;div style=&quot;border-bottom: 1px solid #D75307;color: #333333;font-size: 11px;font-weight: bold;margin: 0;padding: 3px;text-align: justify;text-transform: uppercase;&quot;&gt;Module Settings&lt;/div&gt;" />
+		<param name="height" type="text" label="Height of Block" default="100px" description="Enter the height of the testimonial block in pixels."/>
+		<param name="width" type="text" label="Width of Block" default="400px" description="Enter the width of the testimonial block in pixels."/>
+		
+		<param type="spacer" default="&lt;div style=&quot;border-bottom: 1px solid #D75307;color: #333333;font-size: 11px;font-weight: bold;margin: 0;padding: 3px;text-align: justify;text-transform: uppercase;&quot;&gt;Style Settings&lt;/div&gt;" />
+		<param name="tfont" type="list" label="Testimonial Font" description="Select the font style for the testimonial font.">
+			<option value="user">User Defined</option>
+			<option value="Questrial">Questrial</option>
+			<option value="Numans">Numans</option>
+			<option value="Comfortaa">Comfortaa</option>
+			<option value="Andika">Andika</option>
+			<option value="Podkova">Podkova</option>
+			<option value="Carme">Carme</option>
+			<option value="Varela ">Varela Round</option>
+			<option value="Shanti">Shanti</option>
+			<option value="Muli">Muli</option>
+			<option value="Yellowtail">Yellowtail</option>
+			<option value="Didact Gothic">Didact Gothic</option>
+			<option value="Lato">Lato</option>
+			<option value="Nunito">Nunito</option>
+			<option value="Lobster Two">Lobster Two</option>
+			<option value="Rosario">Rosario</option>
+			<option value="IM Fell French Canon SC">IM Fell French Canon SC</option>
+			<option value="Actor">Actor</option>
+			<option value="Cabin">Cabin</option>
+			<option value="Rochester">Rochester</option>
+			<option value="Calligraffitti">Calligraffitti</option>
+			<option value="Pacifico">Pacifico</option>
+			<option value="Damion">Damion</option>
+			<option value="Varela">Varela</option>
+			<option value="Molengo">Molengo</option>
+			<option value="Ubuntu">Ubuntu</option>
+		</param>
+		<param name="user_defined" type="text" label="User-defined Testimonial Font" description="If 'Testimonial Font' is set to 'User Defined', then enter the font you would like to have." default=""/>
+		<param name="tsize" type="text" label="Testimonial Font Size" default="12" description="Enter the size of the testimonials in pixels."/>
+		<param name="tcolor" type="colorpicker" label="Testimonial Color" default="#666" description="Enter the color of the testimonials in pixels."/>
+		<param name="tweight" type="list" label="Testimonials Font Weight" description="Enter the font weight of the testimonials in pixels.">
+			<option value="normal">Normal</option>
+			<option value="bold">Bold</option>
+		</param>
+		<param name="acolor" type="colorpicker" label="Author Color" default="#666" description="Select the author color."/>
+		<param name="asize" type="text" label="Author Font Size" default="12" description="Enter the font size of author."/>
+		<param name="aweight" type="list" label="Author Font Weight" description="Select the font weight of author.">
+				<option value="normal">Normal</option>
+				<option value="bold">Bold</option>
+		</param>
+		<param name="quote_style" type="list" label="Quote Style" description="Select the quote style of testimonial.">
+					<option value="style1">Style 1</option>
+					<option value="style2">Style 2</option>
+					<option value="style3">Style 3</option>
+					<option value="style4">Style 4</option>
+					<option value="style5">Style 5</option>
+		</param>
+		<param name="quote" type="list" label="Quote Color" description="Select the quote color of testimonial.">
+			<option value="grey">Grey</option>
+			<option value="green">Green</option>
+			<option value="orange">Orange</option>
+			<option value="blue">Blue</option>
+			<option value="black">Black</option>
+			<option value="red">Red</option>
+		</param>
+		
+		<param type="spacer" default="&lt;div style=&quot;border-bottom: 1px solid #D75307;color: #333333;font-size: 11px;font-weight: bold;margin: 0;padding: 3px;text-align: justify;text-transform: uppercase;&quot;&gt;Animation Settings&lt;/div&gt;" />
+				
+		<param name="speed" type="text" label="Testimonial Speed" default="750"/>
+		<param name="timeout" type="text" label="Time Out" default="2000"/>
+		<param name="animation" type="list" label="Animation Type">
+			<option value="slide">Slide</option>
+			<option value="fade">Fade</option>
+		</param>
+		<param name="show_type" type="list" label="Show Testimonial">
+			<option value="random">Randomly</option>
+			<option value="sequence">Sequentially</option>
+		</param>
+				
+		<param type="spacer" default="&lt;div style=&quot;border-bottom: 1px solid #D75307;color: #333333;font-size: 11px;font-weight: bold;margin: 0;padding: 3px;text-align: justify;text-transform: uppercase;&quot;&gt;Testimonial Source&lt;/div&gt;" />
+		
+		<param name="source" type="list" default="component" label="Testimonial Source" description="Select the source from which you want to fetch testimonials.">
+					<option value="component">From Testimonial Component</option>
+					<option value="module">From Testimonial Module</option>
+		</param>
+		<param name="testimonials" type="textarea" default="My company is very happy of the job accomplished by your team. You have designed a brand new joomla website for our company. The team was fast, professional and the price was good too. Well done!/No one works faster. No one works better. No one works smarter. Thank you, Infyways Team!." label="Testimonials" description="Please enter testimonials name separated by '/'" rows="10" cols="50" />
+		<param name="authors" type="textarea" default="John Doe/Jacob Robins" label="Author's Name" description="Please enter author name separated by '/'" rows="10" cols="50" />
+		<param type="spacer" default="&lt;div style=&quot;border-bottom: 1px solid #D75307;color: #333333;font-size: 11px;font-weight: bold;margin: 0;padding: 3px;text-align: justify;text-transform: uppercase;&quot;&gt;Support&lt;/div&gt;" />
+		<param type="spacer" default="For any support and queries &lt;a href='http://support.infyways.com/' target='_blank'&gt;Click Here&lt;/a&gt;. For other Joomla! extensions please visit : &lt;a href='http://www.extensions.infyways.com' target='_blank'&gt;http://www.extensions.infyways.com/&lt;/a&gt;. Please rate and review our extension at Joomla Extensions  Directory &lt;a href =&quot;http://extensions.joomla.org/extensions/contacts-and-feedback/testimonials-a-suggestions/17767&quot; target=&quot;_blank&quot;&gt; Click Here&lt;/a&gt;" />		
+	</params>
+</install>

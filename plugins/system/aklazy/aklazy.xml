@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_AKLAZY_TITLE</name>
+	<author>Nicholas K. Dionysopoulos</author>
+	<authorEmail>nicholas@dionysopoulos.me</authorEmail>
+	<authorUrl>http://www.akeebabackup.com</authorUrl>
+	<copyright>Copyright (c)2010-2013 Nicholas K. Dionysopoulos</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<creationDate>2011-04-17</creationDate>
+	<version>3.3</version>
+	<description>PLG_SYSTEM_AKLAZY_DSCRIPTION</description>
+	<files>
+		<filename plugin="aklazy">aklazy.php</filename>
+		<folder>aklazy</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_aklazy.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_aklazy.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="daysfreq" type="text" default="1" size="5" label="PLG_SYSTEM_AKLAZY_DAYSFREQ_LABEL" description="PLG_SYSTEM_AKLAZY_DAYSFREQ_DESC" />
+				<field name="backuptime" type="text" default="00:00" size="5" label="PLG_SYSTEM_AKLAZY_BACKUPTIME_LABEL" description="PLG_SYSTEM_AKLAZY_BACKUPTIME_DESC" />
+				<field name="profile" type="sql" default="1" label="PLG_SYSTEM_AKLAZY_PROFILE_LABEL" description="PLG_SYSTEM_AKLAZY_PROFILE_DESCRIPTION" query="SELECT `id`, CONCAT(`id`,' - ',`description`) as `desc` FROM `#__ak_profiles`" key_field="id" value_field="desc" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="test" type="radio" default="0" label="PLG_SYSTEM_AKLAZY_TEST_LABEL" description="PLG_SYSTEM_AKLAZY_TEST_DESCRIPTION">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="resetpw" type="password" default="" label="PLG_SYSTEM_AKLAZY_RESETPW_LABEL" description="PLG_SYSTEM_AKLAZY_RESETPW_DESCRIPTION" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

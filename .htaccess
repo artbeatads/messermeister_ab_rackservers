@@ -1,0 +1,6 @@
+
+RewriteEngine On
+
+# Redirects
+Redirect 301 /index2.html http://www.artbeat.net.au/creative
+ErrorDocument 404 http://www.google.com.au

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="2.5" type="template" method="upgrade">
+	<name>messermeister_template</name>
+	<creationDate>2014-1-7</creationDate>
+	<author>Tim Highley</author>
+	<copyright>Copyright © 2014 www.thebrandpool.com.au</copyright>
+	<authorEmail>digital@thebrandpool.com.au</authorEmail>
+	<authorUrl>http://www.thebrandpool.com.au</authorUrl>
+	<version>1.0.0</version>
+	<description><![CDATA[
+		<h1>Messermeister Template</h1>
+		<p><img src="../templates/artbeat_template/template_preview.png" /></p>
+		<br />
+		<br />
+		<br />
+		<br />
+		<h2>Module positions</h2>
+		<ol>
+			<li>product_nav</li>
+			<li>info_nav</li>
+			<li>breadcrumbs</li>
+			<li>slideshow</li>
+			<li>homepage_promo_knives</li>
+			<li>homepage_promo_luggage</li>
+			<li>homepage_promo_accessories</li>
+			<li>after_content</li>
+			<li>footer_nav_col1</li>
+			<li>footer_nav_col2</li>
+			<li>footer_nav_col3</li>
+			<li>footer_nav_col4</li>
+		</ol>
+		<p>Created by <a href="http://www.thebrandpool.com.au" target="_blank">Tim Highley | www.thebrandpool.com.au</a>.</p>
+	]]></description>
+	
+	<files>
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>ico</folder>
+		<folder>images</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<filename>index.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	
+	<positions>
+		<position>product_nav</position>
+		<position>info_nav</position>
+		<position>breadcrumbs</position>
+		<position>slideshow</position>
+		<position>homepage_promo_knives</position>
+		<position>homepage_promo_luggage</position>
+		<position>after_content</position>
+		<position>footer_nav_col1</position>
+		<position>footer_nav_col1</position>
+		<position>footer_nav_col2</position>
+		<position>footer_nav_col3</position>
+		<position>footer_nav_col4</position>
+	</positions>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="FIELD_SPACER_HEADER_DESC" type="spacer" hr="false" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

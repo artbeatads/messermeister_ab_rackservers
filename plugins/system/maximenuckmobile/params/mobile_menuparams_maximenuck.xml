@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="params">
+        <fieldset name="maximenu_mobileparams" label="MOD_MAXIMENUCK_MOBILEPARAMS_FIELDSET_LABEL">
+            <field
+                name="maximenumobile_resolution"
+                type="cktext"
+                label="MOD_MAXIMENUCK_MOBILERESOLUTION_LABEL"
+                description="MOD_MAXIMENUCK_MOBILERESOLUTION_DESC"
+                icon="width.png"
+                suffix="px"
+                default="640" 
+            />
+            <field
+                name="maximenumobile_theme"
+                type="ckfolderlist"
+                directory="plugins/system/maximenuckmobile/themes"
+                hide_none="true"
+                hide_default="true"
+                default="css3megamenu"
+                label="MOD_MAXIMENUCK_MOBILETHEME_LABEL"
+                description="MOD_MAXIMENUCK_MOBILETHEME_DESC"
+                icon="palette.png" 
+            />
+            <field
+                name="maximenumobile_useimage"
+                type="cklist"
+                default="0"
+                label="MOD_MAXIMENUCK_MOBILEUSEIMAGE_LABEL"
+                description="MOD_MAXIMENUCK_MOBILEUSEIMAGE_DESC"
+            >
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field
+                name="maximenumobile_usemodule"
+                type="cklist"
+                default="0"
+                label="MOD_MAXIMENUCK_MOBILEUSEMODULE_LABEL"
+                description="MOD_MAXIMENUCK_MOBILEUSEMODULE_DESC"
+            >
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+		</fieldset>
+	</fields>
+</form>
